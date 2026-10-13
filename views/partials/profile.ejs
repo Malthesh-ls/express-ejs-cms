@@ -1,0 +1,76 @@
+<div class="col-md-12 col-lg-12">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Profile Details</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 mb-4">
+      <div class="card shadow-sm text-center p-4">
+        <div class="mb-3 d-flex align-items-center justify-content-center">
+          <% if (profileData.avatarUrl) { %>
+            <img src="<%= profileData.avatarUrl %>" alt="Avatar" class="rounded-circle profile-img shadow-sm">
+          <% } else { %>
+            <div class="ratio ratio-1x1 rounded-circle bg-success text-white" style="max-width: 130px;">
+              <div class="d-flex align-items-center justify-content-center">
+                Avatar
+              </div>
+            </div>
+          <% } %>
+        </div>
+        <h4 class="mb-1"> <%= profileData.name %> </h4>
+        <p class="text-muted mb-3"> <%= profileData.role %> </p>
+        <button class="btn btn-primary btn-sm mb-3"><i class="bi bi-camera me-1"></i> Change Photo</button>
+
+        <hr>
+
+        <div class="text-start">
+          <small class="text-muted d-block"><i class="bi bi-geo-alt me-1"></i> <%= profileData.city %>, <%= profileData.state %>, <%= profileData.country %> </small>
+          <small class="text-muted d-block mt-1"><i class="bi bi-envelope me-1"></i> <%= profileData.email %> </small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <div class="card shadow-sm p-4">
+        <h5 class="card-title fw-bold mb-4">Account Details</h5>
+        <form action="/admin/updateProfile" method="POST">
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label class="form-label text-muted small fw-bold">First Name</label>
+              <input type="text" class="form-control" value="<%= profileData.firstName %>" name="firstName">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label text-muted small fw-bold">Last Name</label>
+              <input type="text" class="form-control" value="<%= profileData.lastName %>" name="lastName">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label text-muted small fw-bold">Email Address</label>
+            <input type="email" class="form-control" value="<%= profileData.email %>" name="email">
+          </div>
+
+          <div class="row g-3 mb-4">
+            <div class="col-md-4">
+              <label class="form-label text-muted small fw-bold">City</label>
+              <input type="text" class="form-control" value="<%= profileData.city %>" name="city">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label text-muted small fw-bold">State</label>
+              <input type="text" class="form-control" value="<%= profileData.state %>" name="state">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label text-muted small fw-bold">Country</label>
+              <input type="text" class="form-control" value="<%= profileData.country %>" name="country">
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end gap-2">
+            <button type="button" class="btn btn-outline-secondary">Discard</button>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

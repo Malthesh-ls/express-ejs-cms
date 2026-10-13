@@ -1,0 +1,28 @@
+{
+  "name": "express-ejs-cms",
+  "version": "1.0.0",
+  "description": "A lightweight content management system built with Express.js and EJS, featuring an admin dashboard for managing site settings and profile information with JSON-based data storage.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "ejs",
+    "cms",
+    "content management system",
+    "admin dashboard",
+    "site settings",
+    "profile management",
+    "json storage"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "ejs": "^7.0.1",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0"
+  }
+}

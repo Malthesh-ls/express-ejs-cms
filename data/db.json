@@ -1,0 +1,74 @@
+{
+  "navigation": {
+    "menuItems": [
+      {
+        "label": "Home",
+        "path": "/",
+        "order": 1
+      },
+      {
+        "label": "About",
+        "path": "/about",
+        "order": 2
+      },
+      {
+        "label": "Contact",
+        "path": "/contact",
+        "order": 3
+      }
+    ]
+  },
+  "home": {
+    "title": "Welcome to Our Website",
+    "heroSection": {
+      "headline": "Building Modern Web Experiences",
+      "subHeadline": "Fast, responsive, and user-friendly solutions",
+      "ctaButton": "Get Started"
+    },
+    "features": [
+      {
+        "title": "Responsive Design",
+        "description": "Optimized for all devices and screen sizes."
+      },
+      {
+        "title": "SEO Friendly",
+        "description": "Structured content for better search rankings."
+      },
+      {
+        "title": "Performance",
+        "description": "Lightning-fast load times and smooth interactions."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "mission": "Delivering high-quality web solutions with modern technologies.",
+    "vision": "Empowering businesses through innovative digital experiences.",
+    "team": [
+      {
+        "name": "John Doe",
+        "role": "Founder & CEO",
+        "bio": "10+ years of experience in web development."
+      },
+      {
+        "name": "Jane Smith",
+        "role": "Lead Designer",
+        "bio": "Passionate about creating intuitive user interfaces."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "We’d love to hear from you. Reach out anytime.",
+    "methods": {
+      "email": "info@example.com",
+      "phone": "+91-9876543210",
+      "address": "123 Main Street, Ranebennur, Karnataka, India"
+    },
+    "socialLinks": {
+      "facebook": "https://facebook.com/example",
+      "twitter": "https://twitter.com/example",
+      "linkedin": "https://linkedin.com/company/example"
+    }
+  }
+}

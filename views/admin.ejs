@@ -1,0 +1,17 @@
+<%- include('partials/header', { 
+        title: pageTitle, 
+        username: user,
+        pageName: pageName
+}) %>
+
+<% if (pageName === 'Dashboard') { %>
+  <%- include('partials/dashboard') %>
+<% } else if (pageName === 'Profile') { %>
+  <%- include('partials/profile') %>
+<% } else if (pageName === 'Settings') { %>
+  <%- include('partials/settings') %>
+<% } else if (pageName === 'Pages') { %>
+  <%- include('partials/pages') %>
+<% } %>
+
+<%- include('partials/footer') %> <!-- -->

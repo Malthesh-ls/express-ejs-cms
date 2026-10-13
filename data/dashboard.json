@@ -1,0 +1,79 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "firstName": "John",
+      "lastName": "Do",
+      "email": "john.doe@gmail.com",
+      "username": "johndoe",
+      "password": "password",
+      "role": "admin",
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "USA",
+      "permissions": [
+        "manage_users",
+        "edit_content",
+        "view_reports"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@example.com",
+      "username": "janesmith",
+      "password": "password111",
+      "role": "editor",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "permissions": [
+        "edit_content",
+        "publish_content"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sam Wilson",
+      "firstName": "Sam",
+      "lastName": "Wilson",
+      "email": "sam.wilson@example.com",
+      "username": "samwilson",
+      "password": "password222",
+      "role": "viewer",
+      "city": "Los Angeles",
+      "state": "CA",
+      "country": "USA",
+      "permissions": [
+        "view_content"
+      ]
+    }
+  ],
+  "settings": {
+    "siteTitle": "Awesome CMS",
+    "tagLine": "Powered by Express.JS and EJS",
+    "adminEmail": "admin@example.com",
+    "language": "en",
+    "timezone": "America/Los_Angeles",
+    "theme": "light",
+    "notificationsEnabled": true,
+    "searchEngineIndexing": false,
+    "description": "This is a sample CMS application built with Express and EJS. It allows users to manage content, settings, and user profiles in a simple and intuitive interface."
+  },
+  "reports": {
+    "totalUsers": 13,
+    "activeUsers": 7,
+    "conversionRate": "53.85",
+    "previousActiveUsers": 3,
+    "previousConversionRate": 3,
+    "chart": {
+      "title": "Traffic Overview",
+      "startDate": "January 01",
+      "endDate": "December 31",
+      "stack": "Monthly View"
+    }
+  }
+}

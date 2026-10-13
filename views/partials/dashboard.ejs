@@ -1,0 +1,40 @@
+<div class="row g-4 mb-4">
+  <div class="col-12 col-xl-8">
+    <div class="card p-4 h-100">
+      <div class="d-flex justify-content-between align-items-center mb-1">
+        <h6 class="card-title text-muted mb-0"><%= data.reports.chart.title %></h6>
+        <span class="badge bg-secondary-subtle text-secondary px-2.5 py-1 small fw-semibold"><%= data.reports.chart.stack %></span>
+      </div>
+      <p class="text-muted small"><%= data.reports.chart.startDate %> - <%= data.reports.chart.endDate %></p>
+      <div style="height: 180px; position: relative;">
+        <canvas id="salesChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-xl-4 d-flex flex-column gap-4">
+    <div class="">
+      <div class="card p-4 text-white position-relative overflow-hidden"
+        style="background: linear-gradient(135deg, #635bff, #7a73ff);">
+        <div class="d-flex justify-content-between align-items-start z-1">
+          <div>
+            <h3 class="fw-bold mb-1"><%= data.reports.totalUsers %></h3>
+            <p class="mb-0 text-white-50 small fw-medium">Total Users</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="card p-4 position-relative overflow-hidden"
+        style="border: 1px solid #635bff;">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <h3 class="fw-bold text-dark mb-1"><%= data.reports.conversionRate %>%</h3>
+            <p class="mb-0 text-muted small fw-medium">Average Conversion Rate</p>
+          </div>
+          <span class="badge bg-success bg-opacity-10 text-success font-monospace"><i
+              class="bi bi-arrow-up-short"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
